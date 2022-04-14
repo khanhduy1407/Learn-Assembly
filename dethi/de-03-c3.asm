@@ -16,9 +16,8 @@
         mov ah,01h
         lap:
             int 21h
-            cmp cx,0
-            je thoat
-            loop lap
+            cmp al,13
+            loopnz lap
         thoat:
             mov ah,4ch
             int 21h    
