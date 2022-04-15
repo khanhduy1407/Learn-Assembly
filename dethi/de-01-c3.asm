@@ -21,6 +21,8 @@
         jb khonglachu
         cmp al,90d
         jbe chuhoa
+        cmp al,122d
+        ja khonglachu
         cmp al,97d
         jae chuthuong
         
